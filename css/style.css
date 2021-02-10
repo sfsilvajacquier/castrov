@@ -50,10 +50,10 @@ footer {
 
 /* index */
 
-.index {
-    height: 92vh;
+.carousel-inner {
+    height: 87vh;
+    width: auto;
 }
-
 /* sobre mi */
 
 .body-sobre-mi {
