@@ -4,13 +4,7 @@
 Mauro Castro, tatuador vegano.
 
 ## NOTAS
- castrov
 
-merch
-flashcookie
+target blank en tatuajes
 
-inicio
-dibujos y tatuajes 
-
-sobre mi 
-bio corta
+buscar bg img que se adapten a mobile

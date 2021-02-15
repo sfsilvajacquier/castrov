@@ -2,9 +2,10 @@
 Paleta de colores https://coolors.co/d8dbe2-a9bcd0-58a4b0-373f51-1b1b1e
 #D8DBE2 gainsboro (gris clarito)
 #A9BCD0 light steel blue
-#58A4B0 cadet blue
+#58A4B0 cadet blue - #0bc3b5 Teal
 #373F51 charcoal (azul opaco)
 #1B1B1E raisin black 
+
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
@@ -16,7 +17,7 @@ body {
 /* navbar */
 
 .navbar {
-    background: #D8DBE2;
+    background-image: linear-gradient(to right, #0bc3b5 , #373F51);
     border-bottom: 1px solid #1B1B1E ;
 }
 
@@ -39,25 +40,57 @@ body {
 /* footer */
 
 footer {
-    background-color: #1B1B1E;
+    background-image: linear-gradient(to left, #1B1B1E , #373F51);
 }
 
 .social-icons i {
     font-size: 15px;
     margin: 10px 10px 10px 10px;
-    color: #A9BCD0;
+    color: #D8DBE2;
+}
+
+.social-icons i:hover {
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+    color: #0bc3b5;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #D8DBE2;
+}
+
+.web-wish {
+    font-size: 13px;
+    color: #D8DBE2;
+    text-decoration: none;
+}
+
+.web-wish:hover {
+    font-size: 14px;
+    color: #0bc3b5;
 }
 
 /* index */
 
 .carousel-inner {
-    height: 87vh;
+    height: 81vh;
     width: auto;
 }
-/* sobre mi */
+
+@media only screen and (max-width: 768px) {
+    .carousel-section img {
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        
+    }
+  }
+/* About */
 
 .body-sobre-mi {
-    background-image: url("/assets/images/backgrounds/background-texture.jpg");
+    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
     background-repeat: no-repeat;
     height: 87vh;
     display: flex;
@@ -82,17 +115,38 @@ footer {
     }
   }
 
-/* algunos trabajos */
+/* Tattoos */
 
- a img{ 
-    width: 25%;
-    border: 2px solid #000000;
+.body-tattoos {
+    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+ }
+
+#instafeed-container {
+    text-align: center;
 }
+
+.body-tattoos a img{ 
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #1B1B1E;
+}
+
+/* Merch */
+
+.body-merch {
+    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 81vh  
+ }
 
 /* contactame */
  .contactame-formulario {
     color: #1B1B1E;
-    background-image: linear-gradient(to right, #A9BCD0 , #373F51);
+    background-image: linear-gradient(to right, #A9BCD0 , #0bc3b5);
     height: 100vh;
 
  }
@@ -100,18 +154,8 @@ footer {
  /* faq */
 
  .body-faq {
-    background-image: url("/assets/images/backgrounds/Background-librodedibujos.jpg");
+    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 92vh  
- }
-
- .faq-grid {
-    display: grid;
-    grid-template-columns: 95% 5%;
- }
-
- .faq-footer {
-    display: flex;
-    align-items: center;
+    height: 81vh  
  }
