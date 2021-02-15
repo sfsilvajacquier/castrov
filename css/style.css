@@ -90,7 +90,7 @@ footer {
 /* About */
 
 .body-sobre-mi {
-    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
     background-repeat: no-repeat;
     height: 87vh;
     display: flex;
@@ -118,7 +118,7 @@ footer {
 /* Tattoos */
 
 .body-tattoos {
-    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
     background-size: cover;
     background-repeat: no-repeat;  
  }
@@ -137,7 +137,7 @@ footer {
 /* Merch */
 
 .body-merch {
-    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 81vh  
@@ -154,7 +154,7 @@ footer {
  /* faq */
 
  .body-faq {
-    background-image: url("/assets/images/backgrounds/background-prueba-madera.jpg");
+    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 81vh  
