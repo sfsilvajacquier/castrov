@@ -5,12 +5,6 @@ Mauro Castro, tatuador vegano.
 
 ## NOTAS
 
-target blank en tatuajes
+https://sfsilvajacquier.github.io/castrov/
 
-buscar bg img que se adapten a mobile
-
-fondo faq para que se lea mejor
-
-formulario mas chico y mt
-
-https://www.w3schools.com/css/css3_transitions.asp transition a los icons 
+https://docs.google.com/document/d/1Bize5_fzjxdvmJUkIdnbb9xnUCzk5quBnTglVUq7oxM

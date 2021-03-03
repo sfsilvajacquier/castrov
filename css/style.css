@@ -1,167 +1,470 @@
-/* 
-Paleta de colores https://coolors.co/d8dbe2-a9bcd0-58a4b0-373f51-1b1b1e
-#D8DBE2 gainsboro (gris clarito)
-#A9BCD0 light steel blue
-#58A4B0 cadet blue - #0bc3b5 Teal
-#373F51 charcoal (azul opaco)
-#1B1B1E raisin black 
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Benne&display=swap";
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
-*/
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+.thumbnail a > img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left; }
+    .carousel-inner > .item > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      line-height: 1; }
+    .carousel-inner > .item > a > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      line-height: 1; }
+  .carousel-inner > .active {
+    display: block;
+    left: 0; }
+  .carousel-inner > .next {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 100%; }
+  .carousel-inner > .prev {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: -100%; }
+  .carousel-inner > .next.left {
+    left: 0; }
+  .carousel-inner > .prev.right {
+    left: 0; }
+  .carousel-inner > .active.left {
+    left: -100%; }
+  .carousel-inner > .active.right {
+    left: 100%; }
+
+.carousel {
+  position: relative; }
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: 0.5; }
+  .carousel-control:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    filter: alpha(opacity=90);
+    opacity: 0.9; }
+  .carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    filter: alpha(opacity=90);
+    opacity: 0.9; }
+  .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    font-family: serif;
+    line-height: 1; }
+    .carousel-control .icon-prev:before {
+      content: "\2039"; }
+  .carousel-control .icon-next {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    right: 50%;
+    margin-right: -10px;
+    width: 20px;
+    height: 20px;
+    font-family: serif;
+    line-height: 1; }
+    .carousel-control .icon-next:before {
+      content: "\203a"; }
+  .carousel-control .glyphicon-chevron-left {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -10px; }
+  .carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    right: 50%;
+    margin-right: -10px; }
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x; }
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none; }
+  .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px; }
+  .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff; }
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .carousel-caption .btn {
+    text-shadow: none; }
+
+@media all and (transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+  .carousel-inner > .item.next {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.next.left {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.prev.right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; } }
+
+@media (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+  .carousel-inner > .item.next {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.next.left {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.prev.right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; }
+  .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0; } }
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    margin-left: -10px; }
+  .carousel-control .glyphicon-chevron-right {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    margin-right: -10px; }
+  .carousel-control .icon-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    margin-left: -10px; }
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    margin-right: -10px; }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px; }
+  .carousel-indicators {
+    bottom: 20px; } }
+
+/* Variables - Paleta de colores https://coolors.co/d8dbe2-a9bcd0-58a4b0-373f51-1b1b1e */
+/* gris clarito */
+/* celeste */
+/* turquesa */
+/* azul opaco*/
+/* negro */
 body {
-    font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
+  body h2 {
+    font-family: 'Benne';
+    text-transform: uppercase;
+    color: #0bc3b5; }
+  body p {
+    font-weight: 300; }
 
 /* navbar */
-
 .navbar {
-    background-image: linear-gradient(to right, #0bc3b5 , #373F51);
-    border-bottom: 1px solid #1B1B1E ;
-}
-
-.navbar a {
+  background-image: linear-gradient(to right, #0bc3b5, #373F51);
+  border-bottom: 1px solid #1B1B1E; }
+  .navbar a {
+    font-family: 'Roboto';
     color: #1B1B1E;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     list-style: none;
     word-spacing: 1px;
-    display: inline;
-}
-
-.navbar a:hover {
-    color: #373F51;
-    letter-spacing: 1px;
-}
-
+    display: inline; }
+    .navbar a:hover {
+      color: #373F51;
+      letter-spacing: 1px; }
 
 /* footer */
-
 footer {
-    background-image: linear-gradient(to left, #1B1B1E , #373F51);
-}
+  background-image: linear-gradient(to left, #1B1B1E, #373F51); }
 
-.social-icons i {
-    font-size: 15px;
-    margin: 10px 10px 10px 10px;
-    color: #D8DBE2;
-}
-
-.social-icons i:hover {
+.footer__social-icons--font i {
+  font-size: 15px;
+  margin: 10px 10px 10px 10px;
+  color: #D8DBE2; }
+  .footer__social-icons--font i:hover {
     font-size: 20px;
     margin: 5px 5px 5px 5px;
     color: #0bc3b5;
-}
+    transition: width 5s, height 5s; }
 
-.copyright {
-    font-size: 12px;
-    color: #D8DBE2;
-}
+.footer__copyright--font {
+  font-size: 12px;
+  color: #D8DBE2; }
 
-.web-wish {
-    font-size: 13px;
-    color: #D8DBE2;
-    text-decoration: none;
-}
-
-.web-wish:hover {
+.footer__web-wish--font {
+  font-size: 13px;
+  color: #D8DBE2;
+  text-decoration: none; }
+  .footer__web-wish--font:hover {
     font-size: 14px;
-    color: #0bc3b5;
-}
+    color: #0bc3b5; }
 
 /* index */
+.index__carousel--size {
+  height: 82.5vh;
+  width: auto; }
 
-.carousel-inner {
-    height: 81vh;
-    width: auto;
-}
+/* about */
+.body-about {
+  background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #D8DBE2;
+  height: 82.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-@media only screen and (max-width: 768px) {
-    .carousel-section img {
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        
-    }
-  }
-/* About */
+.background-filter-about {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 82.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center; }
 
-.body-sobre-mi {
-    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
-    background-repeat: no-repeat;
-    height: 87vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.memocard:hover {
-    transform: scale(1.5); 
-}
+.memocard {
+  width: 80%;
+  padding: 10px 10px 0px 10px; }
+  .memocard:hover {
+    transform: scale(1.2); }
 
 .memofoto:hover {
-    animation: rotation 2s infinite linear;
-}
+  animation: rotation 2s infinite linear; }
+
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
 
-/* Tattoos */
+/* Portfolio */
+.body-portfolio {
+  background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .body-portfolio a img {
+    height: 220px;
+    width: 220px;
+    margin: 10px;
+    border: 1px solid #1B1B1E; }
 
-.body-tattoos {
-    background-image: url("../assets/images/backgrounds/background-ink.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
- }
+.background-filter-portfolio {
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center; }
 
 #instafeed-container {
-    text-align: center;
-}
+  text-align: center; }
 
-.body-tattoos a img{ 
-    height: 240px;
-    width: 240px;
-    margin: 10px;
-    border: 1px solid #1B1B1E;
-}
-
-/* Merch */
-
+/* merch */
 .body-merch {
-    background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 81vh  
- }
+  background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 82.5vh; }
 
-/* contactame */
- .contactame-formulario {
-    color: #1B1B1E;
-    /* background-image: linear-gradient(to right, #A9BCD0 , #0bc3b5); */
-    background-image: url("../assets/images/backgrounds/background-ink.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+.background-filter-merch {
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 82.5vh;
+  width: 100%; }
 
- }
+/* contact */
+.contactame-formulario {
+  color: #1B1B1E;
+  background-image: linear-gradient(to right, #A9BCD0, #0bc3b5);
+  height: 82.5vh; }
 
- /* faq */
+/* faq */
+.body-faq {
+  background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 82.5vh;
+  color: #D8DBE2; }
+  .body-faq h4 {
+    color: #D8DBE2; }
+  .body-faq .giftcard-icon {
+    filter: invert(0.85); }
 
- .body-faq {
-    background-image: linear-gradient(to right, #A9BCD0 , #0bc3b5);
-    /* background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    min-height: 81vh  
- }
+.background-filter-faq {
+  background-color: rgba(0, 0, 0, 0.35);
+  min-height: 82.5vh;
+  width: 100%; }
+
+.giftcard-icon {
+  height: 25px; }
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+  .carousel-section img {
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 100%; } }

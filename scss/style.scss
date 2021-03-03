@@ -1,0 +1,218 @@
+@import "carousel";
+@import "variables";
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Benne&display=swap";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	h2{
+		font-family: 'Benne';
+		text-transform: uppercase;
+		color: $color-3-teal;
+	}
+	p{
+		font-weight: 300;
+	}
+}
+
+/* navbar */
+
+.navbar {
+	background-image: linear-gradient(to right, $color-3-teal , $color-4-charcoal);
+	border-bottom: 1px solid $color-5-raisin-black;
+	a {
+		font-family: 'Roboto';
+		color: $color-5-raisin-black;
+		font-size: 16px;
+		font-weight: 400;
+		text-decoration: none;
+		list-style: none;
+		word-spacing: 1px;
+		display: inline;
+		&:hover {
+			color: $color-4-charcoal;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+/* footer */
+
+footer {
+	background-image: linear-gradient(to left, $color-5-raisin-black , $color-4-charcoal);
+}
+.footer__social-icons--font {
+	i {
+		font-size: 15px;
+		margin: 10px 10px 10px 10px;
+		color: $color-1-gainsboro;
+		&:hover {
+			font-size: 20px;
+			margin: 5px 5px 5px 5px;
+			color: $color-3-teal;
+			transition: width 5s, height 5s;
+		}
+	}
+}
+.footer__copyright--font {
+	font-size: 12px;
+	color: $color-1-gainsboro;
+}
+.footer__web-wish--font {
+	font-size: 13px;
+	color: $color-1-gainsboro;
+	text-decoration: none;
+	&:hover {
+		font-size: 14px;
+		color: $color-3-teal;
+	}
+}
+
+/* index */
+
+.index__carousel--size {
+	height: 82.5vh;
+	width: auto;
+}
+
+/* about */
+
+.body-about {
+	background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: $color-1-gainsboro;
+	height: 82.5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background-filter-about {
+	background-color: rgba(0, 0, 0, 0.45);
+	height: 82.5vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.memocard {
+	width: 80%;
+	padding:  10px 10px 0px 10px;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+.memofoto {
+	&:hover {
+		animation: rotation 2s infinite linear;
+	}
+}
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+/* Portfolio */
+
+.body-portfolio {
+	background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	a {
+		img {
+			height: 220px;
+			width: 220px;
+			margin: 10px;
+			border: 1px solid $color-5-raisin-black;
+		}
+	}
+}
+
+.background-filter-portfolio {
+	background-color: rgba(0, 0, 0, 0.45);
+	display: flex;
+	align-items: center;
+}
+
+#instafeed-container {
+	text-align: center;
+}
+
+/* merch */
+
+.body-merch {
+	background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 82.5vh;
+}
+
+.background-filter-merch {
+	background-color: rgba(0, 0, 0, 0.35);
+	height: 82.5vh;
+	width: 100%;
+}
+
+/* contact */
+
+.contactame-formulario {
+	color: $color-5-raisin-black;
+	background-image: linear-gradient(to right, $color-2-ligthsteelblue , $color-3-teal);
+	height: 82.5vh;
+}
+
+/* faq */
+
+.body-faq {
+	background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 82.5vh;
+	color: $color-1-gainsboro;
+
+	h4 {
+		color: $color-1-gainsboro;
+	}
+
+	.giftcard-icon {
+		filter: invert(0.85);
+	}
+
+}
+
+.background-filter-faq {
+	background-color: rgba(0, 0, 0, 0.35);
+	min-height: 82.5vh;
+	width: 100%;
+}
+
+.giftcard-icon{
+	height: 25px;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+	.carousel-section {
+		img {
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(-90deg);
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			width:100%;
+		}
+	}
+}
