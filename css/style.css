@@ -304,6 +304,7 @@
     bottom: 20px; } }
 
 /* Variables - Paleta de colores https://coolors.co/d8dbe2-a9bcd0-58a4b0-373f51-1b1b1e */
+/* blanco */
 /* gris clarito */
 /* celeste */
 /* turquesa */
@@ -311,10 +312,14 @@
 /* negro */
 body {
   font-family: 'Roboto', sans-serif; }
-  body h2 {
+  body h1 {
     font-family: 'Benne';
     text-transform: uppercase;
-    color: #0bc3b5; }
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #373F51; }
+  body h2 {
+    font-weight: 300;
+    font-size: 25px; }
   body p {
     font-weight: 300; }
 
@@ -324,7 +329,7 @@ body {
   border-bottom: 1px solid #1B1B1E; }
   .navbar a {
     font-family: 'Roboto';
-    color: #1B1B1E;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -332,7 +337,7 @@ body {
     word-spacing: 1px;
     display: inline; }
     .navbar a:hover {
-      color: #373F51;
+      color: #0bc3b5;
       letter-spacing: 1px; }
 
 /* footer */
@@ -342,7 +347,7 @@ footer {
 .footer__social-icons--font i {
   font-size: 15px;
   margin: 10px 10px 10px 10px;
-  color: #D8DBE2; }
+  color: #ffffff; }
   .footer__social-icons--font i:hover {
     font-size: 20px;
     margin: 5px 5px 5px 5px;
@@ -355,14 +360,14 @@ footer {
 
 .footer__web-wish--font {
   font-size: 13px;
-  color: #D8DBE2;
+  color: #ffffff;
   text-decoration: none; }
   .footer__web-wish--font:hover {
-    font-size: 14px;
+    font-size: 13.5px;
     color: #0bc3b5; }
 
 /* index */
-.index__carousel--size {
+.index__carousel--size, .carousel-caption {
   height: 82.5vh;
   width: auto; }
 
@@ -379,7 +384,7 @@ footer {
   justify-content: center; }
 
 .background-filter-about {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.35);
   height: 82.5vh;
   width: 100%;
   display: flex;
@@ -387,7 +392,8 @@ footer {
 
 .memocard {
   width: 80%;
-  padding: 10px 10px 0px 10px; }
+  padding: 10px 10px 0px 10px;
+  box-shadow: 2px 3px 7px 1px #373F51; }
   .memocard:hover {
     transform: scale(1.2); }
 
@@ -409,11 +415,17 @@ footer {
   .body-portfolio a img {
     height: 220px;
     width: 220px;
-    margin: 10px;
-    border: 1px solid #1B1B1E; }
+    margin: 15px;
+    box-shadow: 2px 3px 7px 1px #373F51;
+    filter: saturate(0); }
+  .body-portfolio a:hover img {
+    transition: all .5s ease;
+    transform: scale(1.1);
+    overflow: hidden;
+    filter: none; }
 
 .background-filter-portfolio {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center; }
 
@@ -439,6 +451,11 @@ footer {
   background-image: linear-gradient(to right, #A9BCD0, #0bc3b5);
   height: 82.5vh; }
 
+.map {
+  border: 5px #ffffff solid;
+  border-radius: 10px;
+  box-shadow: 2px 3px 7px 1px #373F51; }
+
 /* faq */
 .body-faq {
   background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
@@ -446,11 +463,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 82.5vh;
-  color: #D8DBE2; }
-  .body-faq h4 {
-    color: #D8DBE2; }
+  color: #ffffff; }
+  .body-faq h2 {
+    color: #ffffff; }
   .body-faq .giftcard-icon {
-    filter: invert(0.85); }
+    filter: invert(1); }
 
 .background-filter-faq {
   background-color: rgba(0, 0, 0, 0.35);

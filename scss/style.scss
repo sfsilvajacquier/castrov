@@ -6,12 +6,20 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	h2{
+
+	h1 {
 		font-family: 'Benne';
 		text-transform: uppercase;
-		color: $color-3-teal;
+		color: $color-0-white;
+		text-shadow: 2px 2px 4px $color-4-charcoal;
 	}
-	p{
+
+	h2 {
+		font-weight: 300;
+		font-size: 25px;
+	}
+
+	p{ 
 		font-weight: 300;
 	}
 }
@@ -20,10 +28,10 @@ body {
 
 .navbar {
 	background-image: linear-gradient(to right, $color-3-teal , $color-4-charcoal);
-	border-bottom: 1px solid $color-5-raisin-black;
+	border-bottom: 1px solid $color-5-raisinblack;
 	a {
 		font-family: 'Roboto';
-		color: $color-5-raisin-black;
+		color: $color-0-white;
 		font-size: 16px;
 		font-weight: 400;
 		text-decoration: none;
@@ -31,7 +39,7 @@ body {
 		word-spacing: 1px;
 		display: inline;
 		&:hover {
-			color: $color-4-charcoal;
+			color: $color-3-teal;
 			letter-spacing: 1px;
 		}
 	}
@@ -40,13 +48,13 @@ body {
 /* footer */
 
 footer {
-	background-image: linear-gradient(to left, $color-5-raisin-black , $color-4-charcoal);
+	background-image: linear-gradient(to left, $color-5-raisinblack , $color-4-charcoal);
 }
 .footer__social-icons--font {
 	i {
 		font-size: 15px;
 		margin: 10px 10px 10px 10px;
-		color: $color-1-gainsboro;
+		color: $color-0-white;
 		&:hover {
 			font-size: 20px;
 			margin: 5px 5px 5px 5px;
@@ -61,20 +69,21 @@ footer {
 }
 .footer__web-wish--font {
 	font-size: 13px;
-	color: $color-1-gainsboro;
+	color: $color-0-white;
 	text-decoration: none;
 	&:hover {
-		font-size: 14px;
+		font-size: 13.5px;
 		color: $color-3-teal;
 	}
 }
 
 /* index */
 
-.index__carousel--size {
+.index__carousel--size, .carousel-caption {
 	height: 82.5vh;
 	width: auto;
 }
+
 
 /* about */
 
@@ -91,7 +100,7 @@ footer {
 }
 
 .background-filter-about {
-	background-color: rgba(0, 0, 0, 0.45);
+	background-color: rgba(0, 0, 0, 0.35);
 	height: 82.5vh;
 	width: 100%;
 	display: flex;
@@ -101,6 +110,7 @@ footer {
 .memocard {
 	width: 80%;
 	padding:  10px 10px 0px 10px;
+	box-shadow: 2px 3px 7px 1px $color-4-charcoal;
 
 	&:hover {
 		transform: scale(1.2);
@@ -129,17 +139,30 @@ footer {
 	background-position: center center;
 	
 	a {
+
+
 		img {
 			height: 220px;
 			width: 220px;
-			margin: 10px;
-			border: 1px solid $color-5-raisin-black;
+			margin: 15px;
+			box-shadow: 2px 3px 7px 1px $color-4-charcoal;
+			filter: saturate(0);
+		
+		}
+
+		&:hover {
+			img {
+				transition: all .5s ease;
+				transform: scale(1.1);
+				overflow: hidden;
+				filter: none;
+			}
 		}
 	}
 }
 
 .background-filter-portfolio {
-	background-color: rgba(0, 0, 0, 0.45);
+	background-color: rgba(0, 0, 0, 0.35);
 	display: flex;
 	align-items: center;
 }
@@ -167,9 +190,15 @@ footer {
 /* contact */
 
 .contactame-formulario {
-	color: $color-5-raisin-black;
+	color: $color-5-raisinblack;
 	background-image: linear-gradient(to right, $color-2-ligthsteelblue , $color-3-teal);
 	height: 82.5vh;
+}
+
+.map {
+	border: 5px #ffffff solid;
+	border-radius: 10px;
+	box-shadow: 2px 3px 7px 1px $color-4-charcoal;
 }
 
 /* faq */
@@ -180,14 +209,14 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-height: 82.5vh;
-	color: $color-1-gainsboro;
+	color: $color-0-white;
 
-	h4 {
-		color: $color-1-gainsboro;
+	h2 {
+		color: $color-0-white;
 	}
 
 	.giftcard-icon {
-		filter: invert(0.85);
+		filter: invert(1);
 	}
 
 }
