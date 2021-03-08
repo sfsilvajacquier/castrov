@@ -310,6 +310,27 @@
 /* turquesa */
 /* azul opaco*/
 /* negro */
+/* Operaciones */
+.background-filter-about {
+  background-color: rgba(0, 0, 0, 0.35);
+  min-height: 82.5vh;
+  width: 100%; }
+
+.background-filter-portfolio {
+  background-color: rgba(0, 0, 0, 0.35);
+  min-height: 82.5vh;
+  width: 100%; }
+
+.background-filter-merch {
+  background-color: rgba(0, 0, 0, 0.35);
+  min-height: 82.5vh;
+  width: 100%; }
+
+.background-filter-faq {
+  background-color: rgba(0, 0, 0, 0.35);
+  min-height: 82.5vh;
+  width: 100%; }
+
 body {
   font-family: 'Roboto', sans-serif; }
   body h1 {
@@ -384,9 +405,6 @@ footer {
   justify-content: center; }
 
 .background-filter-about {
-  background-color: rgba(0, 0, 0, 0.35);
-  height: 82.5vh;
-  width: 100%;
   display: flex;
   align-items: center; }
 
@@ -425,7 +443,6 @@ footer {
     filter: none; }
 
 .background-filter-portfolio {
-  background-color: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center; }
 
@@ -439,11 +456,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   height: 82.5vh; }
-
-.background-filter-merch {
-  background-color: rgba(0, 0, 0, 0.35);
-  height: 82.5vh;
-  width: 100%; }
 
 /* contact */
 .contactame-formulario {
@@ -468,11 +480,6 @@ footer {
     color: #ffffff; }
   .body-faq .giftcard-icon {
     filter: invert(1); }
-
-.background-filter-faq {
-  background-color: rgba(0, 0, 0, 0.35);
-  min-height: 82.5vh;
-  width: 100%; }
 
 .giftcard-icon {
   height: 25px; }

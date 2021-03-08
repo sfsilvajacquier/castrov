@@ -5,3 +5,13 @@ $color-2-ligthsteelblue: #A9BCD0; /* celeste */
 $color-3-teal: #0bc3b5; /* turquesa */
 $color-4-charcoal: #373F51; /* azul opaco*/
 $color-5-raisinblack: #1B1B1E; /* negro */
+
+/* Operaciones */
+
+@each $page in about, portfolio, merch, faq {
+    .background-filter-#{$page} {
+    background-color: rgba(0, 0, 0, 0.35);
+	min-height: 82.5vh;
+	width: 100%;
+    }
+}
