@@ -43,6 +43,9 @@ body {
 			letter-spacing: 1px;
 		}
 	}
+	.fa-bars {
+		font-size: 16px;
+	}
 }
 
 /* footer */
@@ -93,7 +96,7 @@ footer {
 	background-repeat: no-repeat;
 	background-position: center center;
 	color: $color-1-gainsboro;
-	height: 82.5vh;
+	min-height: 82.5vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -110,9 +113,10 @@ footer {
 	box-shadow: 2px 3px 7px 1px $color-4-charcoal;
 
 	&:hover {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 }
+/* animation rotate foto 
 .memofoto {
 	&:hover {
 		animation: rotation 2s infinite linear;
@@ -125,7 +129,7 @@ footer {
 	to {
 		transform: rotate(359deg);
 	}
-}
+} */
 
 /* Portfolio */
 
@@ -188,7 +192,7 @@ footer {
 .contactame-formulario {
 	color: $color-5-raisinblack;
 	background-image: linear-gradient(to right, $color-2-ligthsteelblue , $color-3-teal);
-	height: 82.5vh;
+	min-height: 82.5vh;
 }
 
 .map {
@@ -229,15 +233,99 @@ footer {
 
 
 
-/* media queries */
-@media only screen and (max-width: 768px) {
+/* media queries with bootstrap breackpoints*/
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+
+	/* index */
 	.carousel-section {
-		img {
-			-moz-transform: rotate(90deg);
-			-o-transform: rotate(-90deg);
-			-webkit-transform: rotate(-90deg);
-			transform: rotate(-90deg);
-			width:100%;
+		.background-carousel {
+			height: 82.5vh;
+			width: auto;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
+
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	.map {
+		height: 200px;
+		width: auto;
+	}
+
+	/* faq */
 }
+
+/* Small devices (portrait tablets and large phones, 576px and up to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+	/* index */
+	.carousel-section {
+		.background-carousel {
+			height: 82.5vh;
+			width: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	/* faq */
+
+}
+ 
+/* Medium devices (landscape tablets, 768px and up to 991px) */
+@media only screen and (min-width: 768px) and (min-width: 991px) {
+
+	/* index */
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	/* faq */
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up to 1199px) */
+@media only screen and (min-width: 992px) and (min-width: 1199px) {
+
+	/* index */
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	/* faq */
+
+}
+
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	/* index */
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	/* faq */
+
+}
+
+
+/* Extra extra large devices (extra large screens and tvs, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+	
+	/* index */
+	/* about */
+	/* portfolio */
+	/* merch */
+	/* contact */
+	/* faq */
+} 

@@ -28,7 +28,6 @@
     .carousel-inner > .item > img {
       display: block;
       max-width: 100%;
-      height: auto;
       line-height: 1; }
     .carousel-inner > .item > a > img {
       display: block;
@@ -360,6 +359,8 @@ body {
     .navbar a:hover {
       color: #0bc3b5;
       letter-spacing: 1px; }
+  .navbar .fa-bars {
+    font-size: 16px; }
 
 /* footer */
 footer {
@@ -399,7 +400,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   color: #D8DBE2;
-  height: 82.5vh;
+  min-height: 82.5vh;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -413,17 +414,22 @@ footer {
   padding: 10px 10px 0px 10px;
   box-shadow: 2px 3px 7px 1px #373F51; }
   .memocard:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
 
-.memofoto:hover {
-  animation: rotation 2s infinite linear; }
-
+/* animation rotate foto 
+.memofoto {
+	&:hover {
+		animation: rotation 2s infinite linear;
+	}
+}
 @keyframes rotation {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(359deg); } }
-
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+} */
 /* Portfolio */
 .body-portfolio {
   background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
@@ -461,7 +467,7 @@ footer {
 .contactame-formulario {
   color: #1B1B1E;
   background-image: linear-gradient(to right, #A9BCD0, #0bc3b5);
-  height: 82.5vh; }
+  min-height: 82.5vh; }
 
 .map {
   border: 5px #ffffff solid;
@@ -484,11 +490,70 @@ footer {
 .giftcard-icon {
   height: 25px; }
 
-/* media queries */
-@media only screen and (max-width: 768px) {
-  .carousel-section img {
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    width: 100%; } }
+/* media queries with bootstrap breackpoints*/
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  /* index */
+  .carousel-section .background-carousel {
+    height: 82.5vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center; }
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  .map {
+    height: 200px;
+    width: auto; }
+  /* faq */ }
+
+/* Small devices (portrait tablets and large phones, 576px and up to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* index */
+  .carousel-section .background-carousel {
+    height: 82.5vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center; }
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  /* faq */ }
+
+/* Medium devices (landscape tablets, 768px and up to 991px) */
+@media only screen and (min-width: 768px) and (min-width: 991px) {
+  /* index */
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  /* faq */ }
+
+/* Large devices (laptops/desktops, 992px and up to 1199px) */
+@media only screen and (min-width: 992px) and (min-width: 1199px) {
+  /* index */
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  /* faq */ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* index */
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  /* faq */ }
+
+/* Extra extra large devices (extra large screens and tvs, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  /* index */
+  /* about */
+  /* portfolio */
+  /* merch */
+  /* contact */
+  /* faq */ }
