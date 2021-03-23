@@ -82,9 +82,19 @@ footer {
 
 /* index */
 
-.index__carousel--size, .carousel-caption {
+.index__carousel--size {
 	height: 82.5vh;
 	width: auto;
+}
+
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.caption-bg-filter {
+	background-color: #1B1B1E3B;
+	height: 170px;
 }
 
 
@@ -178,14 +188,12 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 82.5vh;
+	min-height: 82.5vh;
 }
 
-// .background-filter-merch {
-// 	background-color: rgba(0, 0, 0, 0.35);
-// 	height: 82.5vh;
-// 	width: 100%;
-// }
+.merch-img {
+	height: 50%;
+}
 
 /* contact */
 
@@ -246,6 +254,9 @@ footer {
 			object-fit: cover;
 			object-position: center;
 		}
+		.caption-bg-filter {
+			height: 200px;
+		}
 	}
 
 	/* about */
@@ -270,6 +281,9 @@ footer {
 			width: auto;
 			object-fit: cover;
 			object-position: center;
+		}
+		.caption-bg-filter {
+			height: 200px;
 		}
 	}
 
