@@ -330,8 +330,18 @@
   min-height: 82.5vh;
   width: 100%; }
 
+html {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 100%; }
+
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 100%; }
   body h1 {
     font-family: 'Benne';
     text-transform: uppercase;
@@ -361,6 +371,9 @@ body {
       letter-spacing: 1px; }
   .navbar .fa-bars {
     font-size: 16px; }
+  .navbar .navbar-toggler-icon {
+    position: absolute;
+    right: 2%; }
 
 /* footer */
 footer {
@@ -423,6 +436,8 @@ footer {
   box-shadow: 2px 3px 7px 1px #373F51; }
   .memocard:hover {
     transform: scale(1.1); }
+  .memocard .card-text {
+    color: #1B1B1E; }
 
 /* animation rotate foto 
 .memofoto {
@@ -471,8 +486,12 @@ footer {
   background-position: center center;
   min-height: 82.5vh; }
 
+.row-tiendas {
+  height: 65vh; }
+
 .merch-img {
-  height: 50%; }
+  height: 250px;
+  width: 250px; }
 
 /* contact */
 .contactame-formulario {
@@ -514,7 +533,13 @@ footer {
     height: 200px; }
   /* about */
   /* portfolio */
+  .body-portfolio a img {
+    height: 270px;
+    width: 270px; }
   /* merch */
+  .merch-img {
+    height: 150px;
+    width: 150px; }
   /* contact */
   .map {
     height: 200px;
@@ -533,21 +558,30 @@ footer {
     height: 200px; }
   /* about */
   /* portfolio */
+  .body-portfolio a img {
+    height: 270px;
+    width: 270px; }
   /* merch */
+  .merch-img {
+    height: 150px;
+    width: 150px; }
   /* contact */
   /* faq */ }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
-@media only screen and (min-width: 768px) and (min-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   /* index */
   /* about */
   /* portfolio */
+  .body-portfolio a img {
+    height: 210px;
+    width: 210px; }
   /* merch */
   /* contact */
   /* faq */ }
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */
-@media only screen and (min-width: 992px) and (min-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* index */
   /* about */
   /* portfolio */
