@@ -60,6 +60,12 @@ body {
 		position: absolute;
 		right: 2%;
 	}
+	.navbar-toggler:focus,
+	.navbar-toggler:active,
+	.navbar-toggler-icon:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }
 
 /* footer */
@@ -144,20 +150,6 @@ footer {
 		color: $color-5-raisinblack;
 	}
 }
-/* animation rotate foto 
-.memofoto {
-	&:hover {
-		animation: rotation 2s infinite linear;
-	}
-}
-@keyframes rotation {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
-	}
-} */
 
 /* Portfolio */
 
@@ -169,14 +161,12 @@ footer {
 	
 	a {
 
-
 		img {
 			height: 220px;
 			width: 220px;
 			margin: 15px;
 			box-shadow: 2px 3px 7px 1px $color-4-charcoal;
-			filter: saturate(0);
-		
+			filter: saturate(0);		
 		}
 
 		&:hover {
@@ -215,6 +205,10 @@ footer {
 .merch-img {
 	height: 250px;
 	width: 250px;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 /* contact */
@@ -251,17 +245,9 @@ footer {
 
 }
 
-// .background-filter-faq {
-// 	background-color: rgba(0, 0, 0, 0.35);
-// 	min-height: 82.5vh;
-// 	width: 100%;
-// }
-
 .giftcard-icon{
 	height: 25px;
 }
-
-
 
 /* media queries with bootstrap breackpoints*/
 
@@ -347,6 +333,17 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	/* index */
+	.carousel-section {
+		.background-carousel {
+			height: 82.5vh;
+			width: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+		.caption-bg-filter {
+			height: 200px;
+		}
+	}
 	/* about */
 	/* portfolio */
 	.body-portfolio {
@@ -359,6 +356,9 @@ footer {
 	}
 	/* merch */
 	/* contact */
+	.map {
+		width: 650px;
+	}
 	/* faq */
 	
 }

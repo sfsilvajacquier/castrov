@@ -374,6 +374,11 @@ body {
   .navbar .navbar-toggler-icon {
     position: absolute;
     right: 2%; }
+  .navbar .navbar-toggler:focus,
+  .navbar .navbar-toggler:active,
+  .navbar .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none; }
 
 /* footer */
 footer {
@@ -439,20 +444,6 @@ footer {
   .memocard .card-text {
     color: #1B1B1E; }
 
-/* animation rotate foto 
-.memofoto {
-	&:hover {
-		animation: rotation 2s infinite linear;
-	}
-}
-@keyframes rotation {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
-	}
-} */
 /* Portfolio */
 .body-portfolio {
   background-image: url("../assets/images/backgrounds/background-prueba-madera.jpg");
@@ -492,6 +483,8 @@ footer {
 .merch-img {
   height: 250px;
   width: 250px; }
+  .merch-img:hover {
+    transform: scale(1.1); }
 
 /* contact */
 .contactame-formulario {
@@ -571,6 +564,13 @@ footer {
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* index */
+  .carousel-section .background-carousel {
+    height: 82.5vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center; }
+  .carousel-section .caption-bg-filter {
+    height: 200px; }
   /* about */
   /* portfolio */
   .body-portfolio a img {
@@ -578,6 +578,8 @@ footer {
     width: 210px; }
   /* merch */
   /* contact */
+  .map {
+    width: 650px; }
   /* faq */ }
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */
